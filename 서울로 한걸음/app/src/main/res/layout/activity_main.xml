@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <TextView
+                    android:id="@+id/SearchToolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="서울로 한걸음"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_above="@+id/linearLayout3"
+                    android:background="@drawable/subtoolbar"
+                    android:gravity="center"
+                    android:text="서울로7017 여행 추천코스 도우미"
+                    android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/childcos"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="31dp"
+                            android:layout_marginStart="31dp"
+                            android:background="@drawable/button"
+                            android:src="@drawable/child" />
+
+                        <ImageView
+                            android:id="@+id/friendcos"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/childcos"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/button"
+                            android:src="@drawable/friend" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/solocos"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="31dp"
+                            android:layout_marginRight="31dp"
+                            android:background="@drawable/button"
+                            android:src="@drawable/holo" />
+
+                        <ImageView
+                            android:id="@+id/lovecos"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@+id/solocos"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp"
+                            android:background="@drawable/button"
+                            android:src="@drawable/couple" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="bottom"
+                            app:srcCompat="@drawable/jandi" />
+
+                        <ImageView
+                            android:id="@+id/search"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp"
+                            android:background="@drawable/button"
+                            android:src="@drawable/search" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/search"
+                            android:layout_marginEnd="29dp"
+                            android:layout_marginRight="29dp"
+                            android:background="@drawable/button"
+                            android:padding="23dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/leg" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

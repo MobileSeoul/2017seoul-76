@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/app_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:background="@color/google_green"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="우리 앱은?"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:background="#cfcfcf"
+                        android:gravity="top"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="3dp"
+                        android:text="배경"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/button_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="서울역 고가 도로는 급격한 인구증가와 교통난 해갈을 위해 서울역의 동서를 가로지르는 형태로 설계되어 1970년에 준공된 서울의 상징적 구조물이었습니다. 1990년대 말부터 서울역 고가 도로의 안전성 문제는 매년 제기됐고, 서울시는 정기적인 안전점검 및 정밀안전 진단을 통해 매년 보수공사를 진행해왔습니다. 철거 검토의 배경에는 교통보다는 안전, 그리고 사람이 1순위인 서울시의 정책이 있었습니다. 노후된 건축에 대한 획일적인 자세,‘철거'가 아닌 서울은 잠시 멈춤을 선택했습니다.\n서울역 고가 도로의 안전성 문제가 하중 때문이라면, 자동차길에서 사람길로 바꿔보는 건 어떨까?\n서울의 관문이자 통일시대 유라시아 철도의 시발점인 서울역 주변에 활력을 불어넣고, 남대문시장·명동·남산과 서울역 서쪽을 사람길로 연결하는 방안을 시민들과 함께 고민했습니다. 이렇게 서울로7017이 만들어졌습니다."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_item2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#cfcfcf"
+                        android:gravity="top"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="3dp"
+                        android:text="기대효과"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/button_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="「서울역 주변 교통대책」"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:padding="5dp"
+                            android:text="서울역 7017 프로젝트에 대한 가장 큰 우려는 서울역 고가 도로 차량통행 폐쇄 시 주변 지역의 교통대란이었습니다. 일일 교통량 4만 6천 대 중 단순통과 교통량이 약 60%에 달했던 서울역 고가 도로를 대체할 경우 인접한 칠패로의 교통량은 27% 증가, 서소문로 약 6% 증가, 퇴계로 16% 감소가 예측됩니다. 이에 서울시는 원·근거리우회경로와 대중교통 노선 추가를 비롯한 교통개선 대책을 수립했습니다."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="「침체된 남대문시장 활성화」"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:padding="5dp"
+                            android:text="심각한 건물 노후와 공실률 증가, 업종변경 증가 등의 문제를 드러내며 2003년에 1위였던 남대문시장의 방문선호도는 2014년에 7위로 추락하고 말았습니다. 여기에 서울역 고가 도로를 보행길로 조성할 경우 교통 불편으로 상가 침체가 가속화될 것을 우려하는 상인들이 많습니다. 그러나 현재 남대문시장은 많은 차량이 다니고 있음에도 상권침체가 지속되고 있습니다. 차보다 사람이 더 많이 오고 가게 된다면 오히려 시장 상권이 활성화될 수 있습니다."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="「서울역 북부역세권 개발」"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="현재 서울역 북부역세권은 2008년 12월 역세권 개발착수 이후,
+        국제금융위기와 국내 경기침체로 사업은 제자리걸음에 머물러 있습니다. 개발이 장기화되자 2015년 3월 우선협상대상자는 사업 포기를 선언했습니다. 이에 서울시는 코레일과 협의안을 도출해 최대한 빨리 코레일에서 사업자 공모를 시행할 수 있도록 하겠습니다."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/navigation_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#FFFFFF"
+        app:menu="@menu/menu_navigation" />
+</android.support.v4.widget.DrawerLayout>

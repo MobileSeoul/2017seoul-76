@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@drawable/dialog"
+    android:elevation="0dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="검색결과"
+        android:textColor="@color/google_green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/c_list"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_weight="0.67" />
+
+</LinearLayout>
+
+

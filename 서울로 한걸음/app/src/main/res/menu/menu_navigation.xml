@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/info_seoullo"
+            android:icon="@drawable/s_info_icon"
+            android:tint="@color/white"
+            android:title="서울로란?" />
+        <item
+            android:id="@+id/info_program"
+            android:icon="@drawable/ic_insert_emoticon_black_48dp"
+            android:tint="@color/white"
+            android:title="서울로 통하다" />
+        <item
+            android:id="@+id/info_tour"
+            android:icon="@drawable/flag_icon"
+            android:tint="@color/white"
+            android:title="서울로 투어" />
+        <item
+            android:id="@+id/info_new"
+            android:icon="@drawable/spearker_icon"
+            android:tint="@color/white"
+            android:title="새소식" />
+
+        <item
+            android:id="@+id/info_idea"
+            android:icon="@drawable/idea"
+            android:tint="@color/white"
+            android:title="아이디어 제안" />
+
+        <item
+            android:id="@+id/info_faq"
+            android:icon="@drawable/faq"
+            android:tint="@color/white"
+            android:title="FAQ" />
+    </group>
+</menu>
